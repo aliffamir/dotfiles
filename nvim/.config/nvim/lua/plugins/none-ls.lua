@@ -1,5 +1,8 @@
 return {
   "nvimtools/none-ls.nvim",
+  dependencies = {
+    "nvimtools/none-ls-extras.nvim",
+  },
   config = function()
     -- TODO: setup format on save see (https://www.youtube.com/watch?v=lsFoZIg-oDs&t=129s)
     -- local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
