@@ -1,7 +1,7 @@
-return { 
-  "catppuccin/nvim", 
-  lazy = false, 
-  name = "catppuccin", 
+return {
+  "catppuccin/nvim",
+  lazy = false,
+  name = "catppuccin",
   priority = 1001,
   opts = {
     transparent_background = true,
