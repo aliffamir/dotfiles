@@ -30,5 +30,22 @@ return {
       tabline = {},
       extensions = {},
     })
+
+    -- Custom Lualine component to show attached language server
+		local clients_lsp = function()
+			local bufnr = vim.api.nvim_get_current_buf()
+
+			local clients = vim.lsp.get_clients()
+			if next(clients) == nil then
+				return ""
+			end
+
+			local c = {}
+			for _, client in pairs(clients) do
+				table.insert(c, client.name)
+			end
+			return " " .. table.concat(c, "|")
+		end
+
   end
 }
