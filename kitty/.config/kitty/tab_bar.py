@@ -105,7 +105,7 @@ def draw_tab_with_separator(
         screen.cursor.bg = as_rgb(draw_data.inactive_bg.rgb)
         screen.cursor.fg = as_rgb(draw_data.inactive_fg.rgb)
 
-    
+
     draw_title(draw_data, screen, tab, index, max_tab_length)
 
     if tab.is_active:
