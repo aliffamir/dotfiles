@@ -9,13 +9,6 @@ return {
   {
     "mason-org/mason-lspconfig.nvim",
     lazy = false,
-    opts = {
-      auto_install = true,
-      ensure_installed = {
-        "clangd",
-        "clang-format",
-      }
-    }
   },
   {
     "neovim/nvim-lspconfig",
