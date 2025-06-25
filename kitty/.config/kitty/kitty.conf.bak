@@ -9,23 +9,32 @@ background_opacity 0.8
 background_blur 20
 
 font_size 15
-# font_family FiraCode Nerd Font Mono
-# bold_font auto
-# italic_font auto
-# bold_italic_font auto
 
 hide_window_decorations yes
 
 # tab bar config
-tab_bar_style custom 
+tab_bar_style custom
 tab_bar_edge top
-tab_separator "  "
-active_tab_foreground #1E1E2E
-inactive_tab_foreground #CCCCCC
+tab_bar_margin_width 0.0
+tab_bar_margin_height 0.0 0.0
+tab_bar_align left
+tab_bar_min_tabs 1
+tab_separator ""
+tab_activity_symbol none
+tab_title_template "{index}  {tab.active_wd.rsplit('/', 1)[-1]}"
+tab_bar_background        #191724
+active_tab_background     #c4a7e7
+inactive_tab_background   #26233a
+
+active_tab_foreground     #191724
+inactive_tab_foreground   #e0def4
+
+# panes config
+active_border_color none
 
 
 # BEGIN_KITTY_FONTS
-font_family      family="MesloLGS Nerd Font Mono"
+font_family      family="Menlo"
 bold_font        auto
 italic_font      auto
 bold_italic_font auto
