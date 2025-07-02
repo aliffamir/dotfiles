@@ -1,0 +1,8 @@
+[user]
+	name = Aliff Amir
+	email = aliff6406@gmail.com
+[init]
+	defaultBranch = main
+[core]
+	editor = nvim
+	excludesfile = /Users/aliffamir/.gitignore
