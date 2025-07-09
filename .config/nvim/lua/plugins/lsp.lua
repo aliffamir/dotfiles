@@ -35,6 +35,10 @@ return {
 				capabilities = capabilities,
 				filetypes = { "cmake", "CMakeLists.txt" },
 			})
+            lspconfig.lemminx.setup({
+                capabilities = capabilities,
+                filetypes = { "xml" },
+            })
 
 			local opts = { buffer = event.buf, remap = false }
 
