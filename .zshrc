@@ -121,3 +121,11 @@ export NVM_DIR="$HOME/.nvm"
 # Add .NET to zsh
 export DOTNET_ROOT="$HOME/.dotnet"
 export PATH="$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools"
+
+# pnpm
+export PNPM_HOME="/Users/aliffamir/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
