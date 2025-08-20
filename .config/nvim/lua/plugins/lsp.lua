@@ -39,6 +39,13 @@ return {
                 capabilities = capabilities,
                 filetypes = { "xml" },
             })
+            lspconfig.docker_compose_language_service.setup({
+                capabilities = capabilities,
+            })
+            lspconfig.buf_ls.setup({
+                capabilities = capabilities,
+                filetypes = { "proto", "cpp" },
+            })
 
             local opts = { buffer = event.buf, remap = false }
 
