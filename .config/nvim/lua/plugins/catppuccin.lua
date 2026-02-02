@@ -12,16 +12,28 @@ return {
         highlight_overrides = {
             mocha = function(C)
                 return {
-                    -- Non-current line numbers (soft white)
+                    --  line numbers
                     LineNr = { fg = C.subtext1 },
-
-                    -- Current line number (bright white)
+                    LineNrAbove = { fg = C.subtext1 },
+                    LineNrBelow = { fg = C.subtext1 },
                     CursorLineNr = { fg = C.text, style = { "bold" } },
+                    --  force transparency in common groups
+                    Normal = { bg = "NONE" },
+                    NormalNC = { bg = "NONE" },
+                    NormalFloat = { bg = "NONE" },
+                    FloatBorder = { bg = "NONE" },
+                    SignColumn = { bg = "NONE" },
+                    EndOfBuffer = { bg = "NONE" },
+                    --  sidebars (Neo-tree, etc.)
+                    NeoTreeNormal = { bg = "NONE" },
+                    NeoTreeNormalNC = { bg = "NONE" },
+                    NeoTreeEndOfBuffer = { bg = "NONE" },
                 }
             end,
         },
     },
-    config = function()
-        vim.cmd("colorscheme catppuccin")
+    config = function(_, opts)
+        require("catppuccin").setup(opts)
+        vim.cmd.colorscheme("catppuccin")
     end,
 }
