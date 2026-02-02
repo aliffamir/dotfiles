@@ -40,3 +40,8 @@ vim.keymap.set("v", "<leader>P", '"+P', { noremap = true, silent = true })
 -- Git
 vim.keymap.set("n", "<leader>gh", ":Gitsigns preview_hunk<CR>", {})
 vim.keymap.set("n", "<leader>gb", ":Gitsigns toggle_current_line_blame<CR>", {})
+
+-- Tab indent
+vim.keymap.set("n", "<Tab>", ">>^", { noremap = true })
+vim.keymap.set("n", "<S-Tab>", "<<^", { noremap = true })
+vim.keymap.set("i", "<S-Tab>", "<C-d>", { noremap = true })
