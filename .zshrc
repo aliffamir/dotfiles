@@ -129,3 +129,4 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+alias rv='docker run -i --rm -v "$PWD":/root ghcr.io/sampsyo/cs3410-infra'
